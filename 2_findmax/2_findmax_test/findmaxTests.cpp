@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "../findmax.h"
+#include "../findmax.cpp"
 #include <vector>
 #include <string>
 

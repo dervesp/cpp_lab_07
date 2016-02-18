@@ -148,12 +148,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\findmax.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\findmax.cpp" />
     <ClCompile Include="2_findmax_test.cpp" />
     <ClCompile Include="findmaxTests.cpp" />
     <ClCompile Include="stdafx.cpp">
