@@ -6,11 +6,12 @@ bool FindMaxEx(std::vector<T> const & arr, T & maxValue, Less const & less)
 {
 	if (!arr.empty())
 	{
-		maxValue = arr[0];
-		for (auto & arrItem : arr)
+		size_t maxValueIndex = 0;
+		for (auto currentIndex = 0; currentIndex < arr.size(); ++currentIndex)
 		{
-			maxValue = (less(maxValue, arrItem)) ? arrItem : maxValue;
+			maxValueIndex = less(arr[maxValueIndex], arr[currentIndex]) ? currentIndex : maxValueIndex;
 		}
+		maxValue = arr[maxValueIndex];
 		return true;
 	}
 	return false;
